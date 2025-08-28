@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estyle.css">
+    <title>Final Modulo 5 Javascript</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Gestión de Tareas Colaborativa - Final Modulo 5 Grupo 6</h1>
+            <div class="auth-buttons">
+                <button id="show-login">Iniciar Sesión</button>
+                <button id="show-register">Registrarse</button>
+                <button id="logout-btn" style="display:none;">Cerrar Sesión</button>
+                <span id="user-info"></span>
+            </div>
+        </header>
+
+        <div id="auth-forms" class="forms-container" style="display:none;">
+            <div class="card">
+                <h2>Iniciar Sesión</h2>
+                <form id="login-form">
+                    <input type="email" id="login-email" placeholder="Correo electrónico" required>
+                    <input type="password" id="login-password" placeholder="Contraseña" required>
+                    <button type="submit">Ingresar</button>
+                </form>
+            </div>
+
+            <div class="card">
+                <h2>Registrarse</h2>
+                <form id="register-form">
+                    <input type="text" id="register-name" placeholder="Nombre completo" required>
+                    <input type="email" id="register-email" placeholder="Correo electrónico" required>
+                    <input type="password" id="register-password" placeholder="Contraseña" required>
+                    <button type="submit">Crear cuenta</button>
+                </form>
+            </div>
+        </div>
+
+        <main id="app-content" style="display:none;">
+            <div class="card">
+                <h2>Crear Nueva Tarea</h2>
+                <form id="create-task-form">
+                    <input type="text" id="task-title" placeholder="Título de la tarea" required>
+                    <textarea id="task-description" placeholder="Descripción"></textarea>
+                    <select id="task-assignee" required>
+                        <option value="">Seleccionar asignado</option>
+                    </select>
+                    <input type="date" id="task-deadline">
+                    <button type="submit">Crear Tarea</button>
+                </form>
+            </div>
+
+            <div class="filters">
+                <div class="filter">
+                    <label>Filtrar por estado:</label>
+                    <select id="filter-status">
+                        <option value="all">Todas las tareas</option>
+                        <option value="pending">Pendientes</option>
+                        <option value="completed">Completadas</option>
+                    </select>
+                </div>
+                <div class="filter">
+                    <label>Filtrar por usuario:</label>
+                    <select id="filter-user">
+                        <option value="all">Todos los usuarios</option>
+                    </select>
+                </div>
+                <div class="filter">
+                    <label>&nbsp;</label>
+                    <button id="clear-filters">Limpiar filtros</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Lista de Tareas</h2>
+                <div id="tasks-container"></div>
+            </div>
+
+            <div class="card">
+                <h2>Estadísticas</h2>
+                <div class="stats">
+                    <div class="stat">
+                        <h3>Total de tareas</h3>
+                        <p id="total-tasks">0</p>
+                    </div>
+                    <div class="stat">
+                        <h3>Tareas completadas</h3>
+                        <p id="completed-tasks">0</p>
+                    </div>
+                    <div class="stat">
+                        <h3>Porcentaje de completado</h3>
+                        <p id="completion-percentage">0%</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
