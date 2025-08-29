@@ -343,6 +343,8 @@ class TaskApp {
     // Usuario autenticado: muestra interfaz principal
     checkAuth() {
         const user = this.auth.getCurrentUser();
+        const illustration = document.getElementById('illustration');
+
         if (user) {
             document.getElementById('show-login').style.display = 'none';
             document.getElementById('show-register').style.display = 'none';
@@ -350,6 +352,7 @@ class TaskApp {
             document.getElementById('user-info').textContent = `Hola, ${user.name}`;
             document.getElementById('auth-forms').style.display = 'none';
             document.getElementById('app-content').style.display = 'block';
+            if (illustration) illustration.style.display = 'none'; // oculta ilustración al loguear
             // Actualiza vistas
             this.renderUserList();
             this.renderTasks();
@@ -361,13 +364,20 @@ class TaskApp {
             document.getElementById('user-info').textContent = '';
             document.getElementById('auth-forms').style.display = 'none';
             document.getElementById('app-content').style.display = 'none';
+            if (illustration) illustration.style.display = ''; // muestra ilustración al cerrar sesión
         }
     }
 
     // Muestra/oculta formularios de autenticación
     toggleAuthForms() {
         const authForms = document.getElementById('auth-forms');
-        authForms.style.display = authForms.style.display === 'none' ? 'flex' : 'none';
+        const illustration = document.getElementById('illustration');
+        // Alterna formularios
+        const showForms = authForms.style.display === 'none';
+        authForms.style.display = showForms ? 'flex' : 'none';
+
+        // Alterna ilustración en sentido contrario
+        illustration.style.display = showForms ? 'none' : '';
     }
 
     handleLogin(e) {
