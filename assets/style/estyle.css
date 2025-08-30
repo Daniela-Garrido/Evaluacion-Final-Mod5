@@ -110,6 +110,7 @@ textarea {
 
 .auth-buttons {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     margin-top: 10px;
 }
@@ -156,6 +157,7 @@ textarea {
 
 .stats {
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
     padding: 0 20px;
     margin: 40px 0px;
