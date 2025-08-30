@@ -197,12 +197,14 @@ textarea {
     width: 100%;
 }
 
+/* Mejoras de responsive */
 @media (max-width: 768px) {
-
-    .forms-container,
-    .filters,
-    .stats {
+    .task-actions {
         flex-direction: column;
+    }
+    
+    .task-actions button {
+        margin-bottom: 5px;
     }
 }
 
@@ -215,3 +217,37 @@ footer {
     border-bottom: 10px solid hsla(259.4117647058824, 100%, 63%, 1);
     border-radius: 5px;
 }
+
+/* Mejoras visuales para inputs */
+input, select, textarea {
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: hsla(259.4117647058824, 100%, 63%, 1);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(103, 58, 183, 0.2);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+}
+
+
