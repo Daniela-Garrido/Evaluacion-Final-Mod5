@@ -59,10 +59,10 @@ h1 {
     max-width: 80%;
 
 }
-
 h1,
 h2,
-h3 {
+h3,
+#user-info {
     color: #2c3e50;
     padding: 0px 5px;
     margin-bottom: 20px;
@@ -71,7 +71,6 @@ h3 {
     font-weight: 400;
     font-style: normal;
 }
-
 .card {
     background: white;
     border-radius: 8px;
@@ -82,7 +81,7 @@ h3 {
 
 button {
     padding: 15px 20px;
-    background: hsla(259.4117647058824, 100%, 63%, 1);
+    background: rgb(87, 40, 189);
     color: white;
     border: none;
     border-radius: 4px;
@@ -91,6 +90,7 @@ button {
     font-family: "Urbanist", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
+    font-size: 15px;
     
 }
 
