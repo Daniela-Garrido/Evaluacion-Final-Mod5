@@ -37,24 +37,20 @@ El desarrollo del proyecto se realizó aplicando los paradigmas solicitados:
 Evaluacion-Final-Mod5/
 │
 ├── assets/
-│   └── Evaluation Final Mod5/  # (Carpeta con recursos adicionales)
-│
-├── img/                        # Carpeta para imágenes
-│
-├── js/
-│   └── script.js              # Lógica de la aplicación
-│
-├── style/
-│   ├── estyle.css             # Estilos de la aplicación
-│   ├── .gitignore             # Archivo para ignorar en Git
-│   └── index.html             # Interfaz principal
-│
-└── README.md                  # Documentación del proyecto
+│   ├── img/
+│   │   └── 3928054.jpg
+│   ├── style/
+│   │   └── estyle.css
+│   └── js/
+│       └── script.js
+├── .gitignore 
+├── index.html
+└── README.md
 ```
 
 ## Instrucciones de Ejecución
-1. Abrir el archivo index.html en un navegador moderno.
+1. Abrir el archivo index.html en un navegador.
 2. Interactuar con la aplicación:
-    - Registrarse o iniciar sesión.
+    - Registrarse o iniciar sesión. 
     - Crear, asignar y administrar tareas.
     - Visualizar estadísticas de avance en tiempo real.
