@@ -5,7 +5,7 @@
 - Daniela Garrido Olivares
 - Gonzalo Román Reyes
 
-## Repositorio: https://github.com/Daniela-Garrido/Evaluacion-Final-Mod5/tree/Feature/MTeresa
+### Repositorio: https://github.com/Daniela-Garrido/Evaluacion-Final-Mod5
 
 ## Descripción del Proyecto
 Este proyecto consiste en una aplicación web de gestión de tareas colaborativa, desarrollada con JavaScript moderno.  
@@ -33,12 +33,24 @@ El desarrollo del proyecto se realizó aplicando los paradigmas solicitados:
 - `localStorage` para almacenamiento local de datos.
 
 ## Estructura de Archivos
-/Evaluacion-Final-Mod5
+```
+Evaluacion-Final-Mod5/
 │
-├─ index.html # Interfaz principal
-├─ estyle.css # Estilos de la aplicación
-├─ script.js # Lógica de la aplicación (clases, eventos y asíncrono)
-└─ README.md # Documentación del proyecto
+├── assets/
+│   └── Evaluation Final Mod5/  # (Carpeta con recursos adicionales)
+│
+├── img/                        # Carpeta para imágenes
+│
+├── js/
+│   └── script.js              # Lógica de la aplicación
+│
+├── style/
+│   ├── estyle.css             # Estilos de la aplicación
+│   ├── .gitignore             # Archivo para ignorar en Git
+│   └── index.html             # Interfaz principal
+│
+└── README.md                  # Documentación del proyecto
+```
 
 ## Instrucciones de Ejecución
 1. Abrir el archivo index.html en un navegador moderno.
